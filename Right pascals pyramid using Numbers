@@ -1,0 +1,19 @@
+n = int(input("Enter: "))
+
+for i in range(1, n + 1):
+    if i == 1:
+        left = " " * ((n - i) * 2)
+        print(left + str(i))
+    else:
+        left = " " * ((n - i) * 2)
+        hallow = " " * (2 * i - 3)
+        print(left + str(i) + hallow + str(i))
+
+for j in range(1, n):
+    if j == n - 1:
+        left = " " * (j * 2)
+        print(left + str(1))
+    else:
+        left = " " * (j * 2)
+        hallow = " " * (2 * (n - j) - 3)
+        print(left + str(n - j) + hallow + str(n - j))
