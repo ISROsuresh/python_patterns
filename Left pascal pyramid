@@ -1,0 +1,8 @@
+n = int(input("Enter Number: "))
+
+for i in range(n):
+    stars = "* " * (i + 1)
+    print(stars)
+for i in range(n):
+    stars = "* " * (n - i - 1)
+    print(stars)
