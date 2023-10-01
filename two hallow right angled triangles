@@ -1,0 +1,10 @@
+n = int(input("Enter Number: "))
+for i in range(1, n +1):
+    if i == 1:
+        print("* " + " " * 4 * (n - i) + "*")
+    elif i == n:
+        print("* " * (2 * n))
+    else:
+        star = "* " + "  " * (i - 2)
+        hallow = " " * (4 * (n - i))
+        print(star + "*" + hallow + " * " + "  " * (i - 2) + "*")
