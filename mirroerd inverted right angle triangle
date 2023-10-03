@@ -1,0 +1,8 @@
+number = int(input("Enter Number: "))
+star = number * 2 - 1  # Calculate the initial number of stars in the first row
+for i in range(number):
+    row = " " * (i * 2) + "* " * star
+    star -= 2
+    print(row)
+    
+    #(odd number of rows)
